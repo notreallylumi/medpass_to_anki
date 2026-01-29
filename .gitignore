@@ -53,3 +53,72 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# ──────────────────────────────────────────────────────────────
+# Build directories (CMake, Make, Ninja, etc.)
+# ──────────────────────────────────────────────────────────────
+build/
+build-*/
+out/
+bin/
+obj/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+*.dir/
+*.ninja*
+rules.ninja
+build.ninja
+install_manifest.txt
+
+# ──────────────────────────────────────────────────────────────
+# Raylib FetchContent artifacts
+# (these get re-downloaded and rebuilt every time anyway)
+# ──────────────────────────────────────────────────────────────
+_deps/
+raylib-*
+raylib-src/
+raylib-build/
+
+# ──────────────────────────────────────────────────────────────
+# Your app's temporary/runtime files
+# ──────────────────────────────────────────────────────────────
+temp_screenshot.png
+*.png
+*.jpg
+*.log
+medpass-to-anki
+medpass-to-anki.exe       # just in case you cross-compile later
+
+# ──────────────────────────────────────────────────────────────
+# Compiled objects & libraries (if you ever add manual ones)
+# ──────────────────────────────────────────────────────────────
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+
+# ──────────────────────────────────────────────────────────────
+# Editor / IDE files
+# ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store               # macOS
+Thumbs.db               # Windows
+
+# ──────────────────────────────────────────────────────────────
+# Misc / don't commit these
+# ──────────────────────────────────────────────────────────────
+*.bak
+*.backup
+*.tmp
+tags
+cscope.*
+compile_commands.json   # optional: keep if you want clangd/intellisense, but many ignore it
