@@ -126,3 +126,4 @@ compile_commands.json   # optional: keep if you want clangd/intellisense, but ma
 .env
 
 .cache/
+.cache/*
